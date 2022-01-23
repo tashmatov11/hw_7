@@ -4,6 +4,10 @@ import javax.persistence.*;
 
 @Table
 public class User {
+
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_RESET = "\u001B[0m";
+
     @Id
     private Long id;
 
@@ -57,4 +61,13 @@ public class User {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        System.out.println(ANSI_YELLOW + "N: " + ANSI_RESET + id + "\n" +
+                           ANSI_YELLOW + "Name: " + ANSI_RESET + name + "\n" +
+                           ANSI_YELLOW + "LastName: " + ANSI_RESET + lastName + "\n" +
+                           ANSI_YELLOW + "Age: " + ANSI_RESET + age + "\n" +
+                           ANSI_YELLOW + "-------------------------------" + ANSI_RESET);
+        return "";
+    }
 }
