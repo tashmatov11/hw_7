@@ -2,13 +2,15 @@ package peaksoft.model;
 
 import javax.persistence.*;
 
-@Table
+@Entity
+@Table(name = "users")
 public class User {
 
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_RESET = "\u001B[0m";
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column
