@@ -82,10 +82,8 @@ public class Main {
                             System.out.println(ANSI_RED + "Таблица ещё не создана!!!" + ANSI_RESET);
                         } else if (userService.getAllUsers().size() == 0) {
                             System.out.println(ANSI_RED + "Таблица пуста!!!" + ANSI_RESET);
-//                        } else if (userService.getAllUsers().size()  id){
-
                         } else{
-                            System.out.print("Введите номер id для удаления: ");
+                            System.out.print(ANSI_YELLOW + "Введите номер id для удаления: " + ANSI_RESET);
                             try {
                                 int q = console.nextInt();
                                 console.nextLine();
