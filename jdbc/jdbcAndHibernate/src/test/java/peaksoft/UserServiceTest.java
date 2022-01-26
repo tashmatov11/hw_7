@@ -25,8 +25,8 @@ public class UserServiceTest {
             Assert.fail("При тестировании удаления таблицы произошло исключение\n" + e);
         }
     }
-
     @Test
+
     public void createUsersTable() {
         try {
             userService.dropUsersTable();

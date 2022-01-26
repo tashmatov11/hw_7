@@ -23,7 +23,7 @@ public class Main {
         UserService userService = new UserServiceImpl();
         while (true) {
             try {
-                comandy();
+                teams();
                 String a = console.nextLine();
                 if (a.equals("-")) {
                     System.exit(0);
@@ -130,7 +130,7 @@ public class Main {
         }
     }
 
-    public static void comandy() {
+    public static void teams() {
         System.out.println(ANSI_GREEN + "Нажмите 1 чтобы создать таблицу\n" +
                 "Нажмите 2 чтобы удалить таблицу\n" +
                 "Нажмите 3 чтобы добавить данные\n" +
